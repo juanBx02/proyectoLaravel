@@ -14,7 +14,7 @@ use App\Http\Controllers\EmpleadosController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layout');
 });
 
 

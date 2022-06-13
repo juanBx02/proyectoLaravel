@@ -8,13 +8,7 @@ class EmpleadosController extends Controller
 {
     public function index(){
         $titulo = "Vista principal de empleados";
-        $empleados = [
-            ['nombre'=>'Luis'],
-            ['nombre'=>'Pedro'],
-            ['nombre'=>'Samuel'],
-            ['nombre'=>'Ana'],
-        ];
-        return view('Empleados.index', compact('titulo', 'empleados'));
+        return view('Empleados.index', compact('titulo'));
     }
     public function crear(){
         $titulo = "Vista crear de empleados";

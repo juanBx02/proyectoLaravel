@@ -1,8 +1,6 @@
-<h1>{{$titulo}}</h1>
+@extends('layout')
+@section('titulo', 'Principal')
+@section('contenido')
 
-@forelse ($empleados as $empleado)
-    <h3>{{$empleado['nombre']}}</h3>
-    <br>
-@empty
-    No hay empleados
-@endforelse
+<h1>{{$titulo}}</h1>
+@endsection
